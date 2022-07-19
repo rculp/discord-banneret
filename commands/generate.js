@@ -65,10 +65,12 @@ module.exports = {
 		if (eligibleClasses.length > 0) {
 			let row = new MessageActionRow();
 			eligibleClasses.forEach(charClass => {
+				const classInfo = classes.find(x => x.className === charClass);
+				const primeReq = classInfo.primeRequisite.join(', ');
 				row.addComponents(
 					new MessageButton()
 						.setCustomId(charClass)
-						.setLabel(charClass)
+						.setLabel(`${charClass} (${primeReq})`)
 						.setStyle('PRIMARY'),
 				);
 				if (row.components.length > 4) {
