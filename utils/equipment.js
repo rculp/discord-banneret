@@ -20,7 +20,7 @@ const randomGearList = [
   [{ name: 'Sack (small)' }],
   [{ name: 'Mirror (hand-sized, steel)' }],
   [{ name: 'Twine (100\' ball)' }],
-  [{ name: 'Mallet' }, { name: 'Stake', quantity: '3' }],
+  [{ name: 'Mallet' }, { name: 'Stake', quantity: 3 }],
   [{ name: 'Wolfsbane, bunch', quantity: 1 }],
 ];
 
